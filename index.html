@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>React BP</title>
+	<link rel="stylesheet" href="./lib/external/semantic-ui.css">
+</head>
+
+<body>
+	<div id="root"></div>
+</body>
+
+<script>
+	window.$ = window.jQuery = require('./lib/external/jQuery.js');
+	require('./lib/external/semantic-ui.js');
+	// install babel hooks in the renderer process
+	require('babel-register');
+	require('./lib/main');
+</script>
+</html>
